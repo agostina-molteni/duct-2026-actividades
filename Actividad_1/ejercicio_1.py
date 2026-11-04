@@ -4,7 +4,7 @@ def contar_frecuencias(ruta):
     Lee un archivo de texto y devuelve un diccionario con la
     frecuencia de cada palabra.
     """
-    with open(ruta, "r", encoding="utf-8") as archivo:
+    with open("texto.txt", "r", encoding="utf-8") as archivo:
         texto = archivo.read()
 
     palabras = texto.lower().split()
